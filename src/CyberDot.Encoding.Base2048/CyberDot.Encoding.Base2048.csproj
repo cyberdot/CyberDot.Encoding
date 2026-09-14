@@ -10,8 +10,8 @@
 		<PackageTags>Base2048, Encoding</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageProjectUrl>https://github.com/cyberdot/base65536</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/cyberdot/base65536</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/cyberdot/CyberDot.Encoding</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/cyberdot/CyberDot.Encoding</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
