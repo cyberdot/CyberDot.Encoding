@@ -43,6 +43,7 @@ jobs:
         run: |
           for project in \
             src/CyberDot.Encoding.Base65536/CyberDot.Encoding.Base65536.csproj \
-            src/CyberDot.Encoding.Base2048/CyberDot.Encoding.Base2048.csproj; do
+            src/CyberDot.Encoding.Base2048/CyberDot.Encoding.Base2048.csproj \
+            src/CyberDot.Encoding.Base84/CyberDot.Encoding.Base84.csproj; do
             dotnet pack "$project" --configuration Debug --no-build --output "${{ runner.temp }}/nupkg-verify"
           done

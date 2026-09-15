@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard1.6</TargetFramework>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Version>1.1.0</Version>
+		<Authors>CyberDot</Authors>
+		<Company>CyberDot</Company>
+		<Description>An implementation of Base84 binary-to-text encoding in C#, including streaming encode/decode functionality via ICryptoTransform/CryptoStream.</Description>
+		<PackageTags>Base84, Encoding</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/cyberdot/CyberDot.Encoding</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/cyberdot/CyberDot.Encoding</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+</Project>
