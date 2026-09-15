@@ -1,0 +1,11 @@
+# These directories hold test fixtures captured verbatim from reference
+# implementations - raw encoded/decoded bytes, not human-authored text. Some of those
+# byte sequences happen to contain a lone LF (0x0A); without this, Git's line-ending
+# conversion (autocrlf) can silently rewrite it to CRLF on checkout, corrupting the
+# fixture without the tracked blob ever changing. Disable text conversion for them.
+src/CyberDot.Encoding.Base2048.Tests/test-data/** -text
+src/CyberDot.Encoding.Base65536.Tests/Bad/** -text
+src/CyberDot.Encoding.Base65536.Tests/DoubledBytes/** -text
+src/CyberDot.Encoding.Base65536.Tests/IgnoreGarbage/** -text
+src/CyberDot.Encoding.Base65536.Tests/Pairs/** -text
+src/CyberDot.Encoding.Base65536.Tests/SingleBytes/** -text

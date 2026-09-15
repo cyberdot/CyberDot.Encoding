@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.9.12105.275 stable
+VisualStudioVersion = 18.9.12105.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberDot.Encoding.Base65536", "src\CyberDot.Encoding.Base65536\CyberDot.Encoding.Base65536.csproj", "{C021E149-EB05-4EF0-9A4C-78A0808AC413}"
 EndProject
@@ -10,6 +10,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberDot.Encoding.Base2048", "src\CyberDot.Encoding.Base2048\CyberDot.Encoding.Base2048.csproj", "{C7494689-9E71-4F15-883E-027E244E3E6D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberDot.Encoding.Base2048.Tests", "src\CyberDot.Encoding.Base2048.Tests\CyberDot.Encoding.Base2048.Tests.csproj", "{287EE26D-CAE7-4AA3-93C5-4A6B2C8A9D05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberDot.Encoding.Base84", "src\CyberDot.Encoding.Base84\CyberDot.Encoding.Base84.csproj", "{9551EC7C-8F4A-462A-AABC-50D1FD1E60B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base2048", "Base2048", "{7F2B409E-7822-462C-8152-0DE5BEE42CAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base65536", "Base65536", "{EF960794-148F-4CC2-A1B6-4001FA1A9095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberDot.Encoding.Base84.Tests", "src\CyberDot.Encoding.Base84.Tests\CyberDot.Encoding.Base84.Tests.csproj", "{3762FA86-26D7-4037-B7CF-E5CA94F03D8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base84", "Base84", "{4C6BEADC-6B8C-425C-9EC4-559597A7915C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +43,25 @@ Global
 		{287EE26D-CAE7-4AA3-93C5-4A6B2C8A9D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{287EE26D-CAE7-4AA3-93C5-4A6B2C8A9D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{287EE26D-CAE7-4AA3-93C5-4A6B2C8A9D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9551EC7C-8F4A-462A-AABC-50D1FD1E60B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9551EC7C-8F4A-462A-AABC-50D1FD1E60B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9551EC7C-8F4A-462A-AABC-50D1FD1E60B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9551EC7C-8F4A-462A-AABC-50D1FD1E60B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3762FA86-26D7-4037-B7CF-E5CA94F03D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3762FA86-26D7-4037-B7CF-E5CA94F03D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3762FA86-26D7-4037-B7CF-E5CA94F03D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3762FA86-26D7-4037-B7CF-E5CA94F03D8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C021E149-EB05-4EF0-9A4C-78A0808AC413} = {EF960794-148F-4CC2-A1B6-4001FA1A9095}
+		{F4232660-0EA0-432E-8713-F4612E88AA80} = {EF960794-148F-4CC2-A1B6-4001FA1A9095}
+		{C7494689-9E71-4F15-883E-027E244E3E6D} = {7F2B409E-7822-462C-8152-0DE5BEE42CAD}
+		{287EE26D-CAE7-4AA3-93C5-4A6B2C8A9D05} = {7F2B409E-7822-462C-8152-0DE5BEE42CAD}
+		{9551EC7C-8F4A-462A-AABC-50D1FD1E60B5} = {4C6BEADC-6B8C-425C-9EC4-559597A7915C}
+		{3762FA86-26D7-4037-B7CF-E5CA94F03D8B} = {4C6BEADC-6B8C-425C-9EC4-559597A7915C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9D040A49-47AE-4503-B1C2-7D3E82AF66AB}
