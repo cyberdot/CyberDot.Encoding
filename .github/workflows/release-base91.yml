@@ -1,0 +1,22 @@
+name: Release CyberDot.Encoding.Base91
+
+# Manually-triggered release for the Base91 package. See _release-package.yml for
+# what this actually does.
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version override (e.g. 1.2.0). Leave empty to use the version in the csproj.'
+        required: false
+        type: string
+
+jobs:
+  release:
+    permissions:
+      contents: write
+    uses: ./.github/workflows/_release-package.yml
+    with:
+      project-path: src/CyberDot.Encoding.Base91/CyberDot.Encoding.Base91.csproj
+      tag-prefix: base91
+      version: ${{ inputs.version }}
