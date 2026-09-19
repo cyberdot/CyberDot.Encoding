@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CyberDot.Encoding.Base84\CyberDot.Encoding.Base84.csproj" />
+    <ProjectReference Include="..\CyberDot.Encoding.Base91\CyberDot.Encoding.Base91.csproj" />
   </ItemGroup>
 
 </Project>
